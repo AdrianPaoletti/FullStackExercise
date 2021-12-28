@@ -1,0 +1,11 @@
+●	What do you think is wrong with the code, if anything?
+    I think that the second condition after the exec method, the one releated to the shop invitations,
+    will lead to errors. It will push all invitations inside the invitations property even though they already exists, 
+    with the exception of the one that has the 0 index.
+
+●	Can you see any potential problems that could lead to exceptions
+    Yes, if the invitation conditon resolves to true then the invitation is pushed. If after that, the user's 
+    conditon resolves to false then the user won't be pushed. That creates the possibility that a user 
+    could have more than one invitation or to have invitations in the air. A posible solution will be to 
+    specify both conditions in an if statement. But it would create another exception, if the user exists but had 
+    have lost the invitation. 

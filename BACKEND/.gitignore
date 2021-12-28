@@ -1,0 +1,10 @@
+#node-modules
+.node_modules
+node_modules
+/node_modules
+
+#sonarscanner
+.scannerwork
+
+# testing
+/coverage
